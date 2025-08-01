@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Game Distribution Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-gamepad"></i>
+            <span>GameHub</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search games...">
+            </div>
+            <button class="btn btn-outline">
+                <i class="fas fa-user"></i>
+                <span class="btn-text">Sign In</span>
+            </button>
+            <div class="cart-btn" id="cartButton">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-count" id="cartCount">0</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Discover Your Next Favorite Game</h1>
+        <p>Explore thousands of games across all genres. Exclusive deals, new releases, and free games every week.</p>
+        <div class="hero-actions">
+            <button class="btn"><i class="fas fa-play"></i> Browse Games</button>
+            <button class="btn btn-outline"><i class="fas fa-gift"></i> Free Games</button>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured-games">
+        <div class="section-header">
+            <h2 class="section-title">Featured Games</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="games-grid" id="featuredGames">
+            <!-- Games will be inserted by JavaScript -->
+        </div>
+    </section>
+
+    <!-- New Releases -->
+    <section class="featured-games new-releases">
+        <div class="section-header">
+            <h2 class="section-title">New Releases</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="games-grid" id="newReleases">
+            <!-- Games will be inserted by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Free Games -->
+    <section class="featured-games">
+        <div class="section-header">
+            <h2 class="section-title">Free Games</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="games-grid" id="freeGames">
+            <!-- Games will be inserted by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="section-header">
+            <h2 class="section-title">Browse Categories</h2>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <div class="category-title">Action</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+                <div class="category-title">Strategy</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-hat-cowboy"></i>
+                </div>
+                <div class="category-title">Adventure</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-sportsball"></i>
+                </div>
+                <div class="category-title">Sports</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-ghost"></i>
+                </div>
+                <div class="category-title">Horror</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="category-title">Racing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>GameHub</h3>
+                <p>The ultimate platform for gamers. Discover, play, and connect with millions of players worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">System Requirements</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 GameHub. All rights reserved. All trademarks are property of their respective owners.
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn checkout-btn">
+                <i class="fas fa-shopping-cart"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Game Title</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="game-info">
+                    <div class="game-info-image" id="modalImage"></div>
+                    <div class="game-info-details">
+                        <h3 class="game-info-title" id="modalGameTitle">Game Title</h3>
+                        <p class="game-info-description" id="modalDescription">
+                            Game description will go here...
+                        </p>
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                        <div class="game-info-price" id="modalPrice">$59.99</div>
+                        <div class="modal-actions">
+                            <button class="btn" id="addToCartBtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fas fa-heart"></i> Wishlist</button>
+                        </div>
+                        <div class="game-specs">
+                            <div class="spec-item">
+                                <div class="spec-title">DEVELOPER</div>
+                                <div id="modalDeveloper">Developer Name</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-title">RELEASE DATE</div>
+                                <div id="modalReleaseDate">Oct 15, 2023</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-title">PLATFORM</div>
+                                <div id="modalPlatform">PC, PlayStation, Xbox</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-title">GENRE</div>
+                                <div id="modalGenre">Action, Adventure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
